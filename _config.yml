@@ -1,7 +1,7 @@
 site: Simples Jekyll Theme
 
 url: "http://yichenchai.github.io"
-baseurl: 
+baseurl: "/"
 
 collections:
   pages:
