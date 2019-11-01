@@ -115,7 +115,17 @@
 
 		<div class="page__content" data-page-title="2019 Hack.lu Contiki-NG Analysis – HackerChai">
 
-			<section class="single">
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151343848-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151343848-2');
+</script>
+
+
+<section class="single">
 
 	<div class="wrap">
 
@@ -147,7 +157,7 @@ In the recent <a href="https://fluxfingersforfuture.fluxfingers.net/scoreboard">
 <p><img src="/images/1/vuln.png" alt="" />
 <em>The vulnerability</em></p>
 
-<p>This is vulnerability I chose to exploit, due to its simplicity. Essentially, when the siclowpan network stack reassembles network fragments packets in a memory buffer of size 0x500, there were no bound checks on the index of the packet fragment. As the index is 1 byte, it can go up to 255, causing out-of-bound write up to 255 * 8 = 0x7f8 from the base of the buffer.</p>
+<p>This is the vulnerability I chose to exploit, due to its simplicity. Essentially, when the siclowpan network stack reassembles network fragments packets in a memory buffer of size 0x500, there were no bound checks on the index of the packet fragment. As the index is 1 byte, it can go up to 255, causing out-of-bound write up to 255 * 8 = 0x7f8 from the base of the buffer.</p>
 
 <h2 id="protocol-analysis">Protocol analysis</h2>
 <p>Admittedly, the hardest part of the challenge was getting up to speed with the many protocols that the program used, as they were all extremely foreign to me. When we initially host a netcat listener on port 60001, we can see that the server repeatedly sends 3 bytes.</p>
