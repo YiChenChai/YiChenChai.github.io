@@ -3,6 +3,11 @@
 <html class="no-js" lang="en">
 
 <head>
+<style>
+blockquote {
+	text-align: center;
+}
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151343848-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -73,7 +78,7 @@
 </head>
 
 
-<body class="loading" data-site-url="http://localhost:4000" data-page-url="/blog/contiki">
+<body class="loading" data-site-url="http://0.0.0.0:4000" data-page-url="/blog/contiki">
 
 
 	<header class="header">
@@ -330,7 +335,7 @@ s.setAttribute('data-timestamp', +new Date());
 </ul>
 
 	<div class="footer__copyright">
-		<span>© 2019 HackerChai</span>
+		<span>© 2020 HackerChai</span>
 		<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>
 	</div>
 
@@ -340,6 +345,15 @@ s.setAttribute('data-timestamp', +new Date());
 	<!-- Javascript Assets -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/simples-min.js"></script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    processEscapes: true
+	  }
+	});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 
 	
 	<!-- Extra Footer JS Code -->

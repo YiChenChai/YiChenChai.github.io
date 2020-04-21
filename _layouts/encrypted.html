@@ -1,0 +1,62 @@
+---
+layout: post
+---
+<style>
+#encrypt_form {
+  text-align: center;
+}
+#encrypt_password {
+  font-size: 22px !important;
+  width: 30% !important;
+  padding: 9px 12px !important;
+}
+#encrypt_button {
+  font-size: 22px !important;
+  padding: 13.4px 20px !important;
+  margin-left: 15px;
+}
+#encrypted_content {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+  #encrypt_password {
+    width: 50% !important;
+  }
+}
+</style>
+<div id="encrypted_content">
+  <form id="encrypt_form" action="#" method="post">
+    <input class="contact-form__input" id="encrypt_password"
+           type="password"
+           name="password"
+           placeholder="{{ page.pass_hint }}"
+           autofocus />
+
+    <input id="encrypt_button" class="button" type="submit" value="Unlock"/>
+  </form>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    document.getElementById('encrypt_form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var passphrase = document.getElementById('encrypt_password').value,
+          encryptedMsg = '{{ page.encrypted }}',
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+      if (decryptedHMAC !== encryptedHMAC) {
+        alert('Bad passphrase!');
+        return;
+      }
+
+      var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+      document.getElementById('encrypted_content').innerHTML = plainHTML;
+      var head= document.getElementsByTagName('head')[0];
+      var script= document.createElement('script');
+      script.src= '/js/simples-min.js';
+      head.appendChild(script);
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+
+    });
+  </script>
+</div>

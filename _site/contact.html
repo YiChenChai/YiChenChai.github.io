@@ -3,6 +3,11 @@
 <html class="no-js" lang="en">
 
 <head>
+<style>
+blockquote {
+	text-align: center;
+}
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151343848-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -34,12 +39,12 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Contact – HackerChai">
 	<meta name="twitter:description" content="Simples is a super simple blogging theme for Jekyll.">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/demo/demo-landscape.jpg">
+	<meta name="twitter:image:src" content="http://0.0.0.0:4000/images/demo/demo-landscape.jpg">
 
 	<!-- Facebook OpenGraph -->
 	<meta property="og:title" content="Contact – HackerChai" />
 	<meta property="og:description" content="Simples is a super simple blogging theme for Jekyll." />
-	<meta property="og:image" content="http://localhost:4000/images/demo/demo-landscape.jpg" />
+	<meta property="og:image" content="http://0.0.0.0:4000/images/demo/demo-landscape.jpg" />
 
 	
 	<!-- Font Embed Code -->
@@ -73,7 +78,7 @@
 </head>
 
 
-<body class="loading" data-site-url="http://localhost:4000" data-page-url="/contact">
+<body class="loading" data-site-url="http://0.0.0.0:4000" data-page-url="/contact">
 
 
 	<header class="header">
@@ -243,7 +248,7 @@
 </ul>
 
 	<div class="footer__copyright">
-		<span>© 2019 HackerChai</span>
+		<span>© 2020 HackerChai</span>
 		<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>
 	</div>
 
@@ -253,6 +258,15 @@
 	<!-- Javascript Assets -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/simples-min.js"></script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    processEscapes: true
+	  }
+	});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 
 	
 	<!-- Extra Footer JS Code -->

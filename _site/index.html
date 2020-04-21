@@ -3,6 +3,11 @@
 <html class="no-js" lang="en">
 
 <head>
+<style>
+blockquote {
+	text-align: center;
+}
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151343848-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -73,7 +78,7 @@
 </head>
 
 
-<body class="loading" data-site-url="http://localhost:4000" data-page-url="/">
+<body class="loading" data-site-url="http://0.0.0.0:4000" data-page-url="/">
 
 
 	<header class="header">
@@ -125,6 +130,24 @@
 			<section class="listing single">
 
 	<div class="wrap">
+
+		
+
+		<article class="listing-post">
+
+			<div class="listing-post__header">
+				<h2 class="listing-post__title"><a href="/blog/cscg-rsa-service">2020 CSCG CTF Quals RSA service writeup</a></h2>
+				<p class="listing-post__subtitle">21 April 2020</p>
+			</div>
+
+			
+
+			<div class="listing-post__content">
+				<p>How to decrypt fixed ciphertext to fixed plaintext by picking a RSA private key?</p>
+				<p><a href="/blog/cscg-rsa-service" class="button">Read More</a>
+			</div>
+
+		</article>
 
 		
 
@@ -246,7 +269,7 @@
 </ul>
 
 	<div class="footer__copyright">
-		<span>© 2019 HackerChai</span>
+		<span>© 2020 HackerChai</span>
 		<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>
 	</div>
 
@@ -256,6 +279,15 @@
 	<!-- Javascript Assets -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/simples-min.js"></script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    processEscapes: true
+	  }
+	});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 
 	
 	<!-- Extra Footer JS Code -->

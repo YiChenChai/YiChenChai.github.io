@@ -3,6 +3,11 @@
 <html class="no-js" lang="en">
 
 <head>
+<style>
+blockquote {
+	text-align: center;
+}
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151343848-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -101,6 +106,15 @@
 	<!-- Javascript Assets -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="{{ '/js/simples-min.js' | relative_url }}"></script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    processEscapes: true
+	  }
+	});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 
 	{% if site.data.settings.advanced_settings.footer_js %}
 	<!-- Extra Footer JS Code -->
