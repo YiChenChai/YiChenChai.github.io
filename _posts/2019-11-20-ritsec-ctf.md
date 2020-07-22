@@ -1,6 +1,6 @@
 ---
 title: '2019 RITSEC CTF wumb0list writeup'
-date: 2019-11-20 00:00:00
+date: 2019-11-20 00:00:00+0800
 excerpt: Writeup for the challenge wumb0list for RITSEC CTF
 comments: true
 ---

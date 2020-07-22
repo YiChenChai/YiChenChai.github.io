@@ -1,6 +1,6 @@
 ---
 title: '2020 Pwn2Win OmniTmizer Challenge'
-date: 2020-06-01 00:00:00
+date: 2020-06-01 00:00:00+0800
 excerpt: A writeup for the first V8 exploitation challenge I finished successfully during a CTF
 comments: true
 ---

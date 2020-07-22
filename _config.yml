@@ -2,6 +2,7 @@ site: Simples Jekyll Theme
 
 url: "http://yichenchai.github.io"
 baseurl: "/"
+timezone: Asia/Singapore 
 
 collections:
   pages:

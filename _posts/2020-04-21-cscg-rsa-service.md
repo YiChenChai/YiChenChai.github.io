@@ -1,6 +1,6 @@
 ---
 title: '2020 CSCG CTF Quals RSA service writeup'
-date: 2020-04-21 00:00:00
+date: 2020-04-21 00:00:00+0800
 excerpt: How to decrypt fixed ciphertext to fixed plaintext by picking a RSA private key?
 comments: true
 pass_hint: Use the CTF flag (Or wait after CTF end)
