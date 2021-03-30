@@ -1,5 +1,5 @@
 ---
-title: 'UMassCTF''s21 replme writeup'
+title: 'UMassCTF''21 replme writeup'
 date: 2021-03-30 00:00:00+0800
 excerpt: Writeup for the challenge replme (and replme2) in UMassCTF'21
 comments: true
