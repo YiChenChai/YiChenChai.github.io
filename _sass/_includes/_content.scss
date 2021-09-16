@@ -122,27 +122,27 @@
 		display: block;
 		padding: 0;
 		line-height: 1.5;
-		font-size: $p-small*0.85;
+		font-size: $p-small*0.70;
 		line-height: $p-lineheight;
 		overflow: auto;
 
 		@include mq(tabletp) {
-			font-size: $p-medium*0.85;
+			font-size: $p-medium*0.70;
 		}
 
 		@include mq(laptop) {
-			font-size: $p-large*0.85;
+			font-size: $p-large*0.70;
 		}
 
 		.highlight {
-			padding: 20px;
+			padding: 10px;
 
 			@include mq(tabletp) {
-				padding: 30px;
+				padding: 20px;
 			}
 
 			@include mq(laptop) {
-				padding: 40px;
+				padding: 30px;
 			}
 		}
 	}
