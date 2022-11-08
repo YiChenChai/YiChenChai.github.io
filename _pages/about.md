@@ -4,7 +4,7 @@ description: whoami
 subtitle: whoami
 featured_image: /images/social.jpg
 ---
-I am a cybersecurity hobbyist based in Singapore.
+I am a cybersecurity hobbyist based in Cambridge University, UK (formerly Singapore).
 
 I mainly focus on pwn, or exploit development, and reverse engineering; I occasionally dabble with cryptography as well.
 

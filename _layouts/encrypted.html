@@ -36,6 +36,9 @@ layout: post
   </form>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
   <script>
+    if ("{{ page.password }}" != "") {
+      document.getElementById('encrypt_password').value = "{{ page.password }}";
+    }
     document.getElementById('encrypt_form').addEventListener('submit', function(e) {
       e.preventDefault();
       var passphrase = document.getElementById('encrypt_password').value,
