@@ -2,7 +2,7 @@ site: Simples Jekyll Theme
 
 url: "http://yichenchai.github.io"
 baseurl: "/"
-timezone: Asia/Singapore 
+timezone: Europe/London
 
 collections:
   pages:
@@ -53,6 +53,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
+  - jemoji
 
 paginate: 6
 paginate_path: "/blog/page:num/"

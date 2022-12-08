@@ -62,7 +62,12 @@ blockquote {
 
 	{% if site.data.settings.advanced_settings.custom_styles %}
 	<!-- Custom Styles -->
-	<style>{{ site.data.settings.advanced_settings.custom_styles }}</style>
+	<style>
+	.emoji {
+		display: inline-block;
+	}
+	{{ site.data.settings.advanced_settings.custom_styles }}
+	</style>
 	{% endif %}
 
 	{% if site.data.settings.advanced_settings.analytics_code %}
