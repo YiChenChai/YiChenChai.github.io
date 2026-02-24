@@ -4,6 +4,10 @@ date: 2020-06-01 00:00:00+0800
 excerpt: A writeup for the first V8 exploitation challenge I finished successfully during a CTF
 comments: true
 ---
+
+* TOC
+{:toc}
+
 ## Introduction
 Last weekend, I participated in Pwn2Win CTF 2020 with my juniors at team *Sieberrsec*. After solving a trivial crypto challenge, I decided to check out a pwn challenge with little solves. Fortunately (or not), it turned out to be a challenge to pwn the notoriously complex V8 Javascript Engine used in Google Chrome and other products. While I did have experience in pwning V8 in past CTFs, I have never managed to finish the challenges in time. Anyways, let's jump right into the writeup.
 

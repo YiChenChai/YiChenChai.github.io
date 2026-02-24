@@ -4,6 +4,10 @@ date: 2021-03-30 00:00:00+0800
 excerpt: Writeup for the challenge replme (and replme2) in UMassCTF'21
 comments: true
 ---
+
+* TOC
+{:toc}
+
 ## Introduction
 For the past weekend, out of boredom, I had decided to take a look at one of the ongoing CTFs, UMassCTF'21. I was pleasantly surprised by how interesting the pwn challenge replme was. It was a lot of fun doing it and unfortunately because of a lot of serious overthinking. I ended up spending two days on what could have been a challenge solvable in an hour. 
 

@@ -3,7 +3,11 @@ title: '2019 RITSEC CTF wumb0list writeup'
 date: 2019-11-20 00:00:00+0800
 excerpt: Writeup for the challenge wumb0list for RITSEC CTF
 comments: true
----
+--
+
+* TOC
+{:toc}
+
 ## Introduction
 On last weekend I had a chance to take a look at a few pwn challenges from RITSEC CTF. Due to the little time I had from other work and limited ability, I only managed to solve wumb0list. Apparently, this approach of solving is unintended. Anyways, here's the (belated) writeup! Skip to the conclusion to find the exploit.
 

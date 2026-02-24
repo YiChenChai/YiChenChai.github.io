@@ -4,6 +4,10 @@ date: 2022-12-07 00:00:00+0000
 excerpt: Pwn challenge Wizard's Diary (libscudo) from HTB University CTF 2022
 comments: true
 ---
+
+* TOC
+{:toc}
+
 ## Introduction
 School holidays have begun for UK universities, and what better way to celebrate it than to start with a CTF? This time, I took part in HTB University CTF 2022. This post will document my thought process in solving the challenge Wizard's Diary. As the challenge is fairly complicated and I am not very good at technical writing, there is a TLDR at the end that summarises my approach.
 

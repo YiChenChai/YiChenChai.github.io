@@ -4,6 +4,10 @@ date: 2022-11-08 00:00:00+0800
 excerpt: Pwn challenge paccheri from LakeCTF 2022
 comments: true
 ---
+
+* TOC
+{:toc}
+
 ## Introduction
 Recently, I took part in an on-site CTF, LakeCTF, organised by the [polygl0ts](https://polygl0ts.ch/) and hosted in EPFL located in Switzerland. A big shout out to my team, cheriPI (Cambridge University), for being so wonderful. The following is a documentation of a rather interesting pwn challenge from the CTF named paccheri.
 
